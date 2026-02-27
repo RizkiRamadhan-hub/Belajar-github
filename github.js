@@ -186,3 +186,69 @@ setTimeout(() => {
   console.log('2 detik')
 }, 2000)
 
+let keranjangBelanja = []
+let antrian = ['budi', 'Rizky']
+let str = 'halo nama saya Rizky'
+let strBaru = 'jakarta adalah ibu kota'
+let harga = 10000
+
+keranjangBelanja.push('sayur')
+keranjangBelanja.push('apel')
+console.log(keranjangBelanja)
+keranjangBelanja.pop()
+console.log(keranjangBelanja)
+
+antrian.unshift('andi')
+console.log(antrian)
+console.log(antrian.indexOf('budi')) 
+antrian.shift()
+console.log(antrian)
+console.log(antrian.indexOf('budi'))
+console.log(antrian.join())
+console.log(str.toUpperCase())
+console.log(str.toLowerCase())
+console.log(str.includes('Rizky'))
+console.log(str.split(' '))
+console.log(antrian)
+console.log(strBaru.replace('jakarta', 'moskow'))
+console.log(Math.round(4.7))
+console.log(Math.round(4.1))
+console.log(typeof(harga)) 
+console.log(typeof(harga.toString())) 
+
+
+
+let buah = ['apel', 'mangga', 'apel', 'jeruk']
+let absensi = ['hadir', 'hadir', 'cabut', 'hadir']
+let hasilVirus = 'ada virus di perangkat anda'
+let kumpulanHarga = [8000,60700,7000,33000]
+let penggunaBaru = ['user1', 'user2', 'user3', 'user4']
+let penggunaLama = penggunaBaru.slice(1,3)
+let stok = [1,7,0,5,2]
+let kata2 = ['budi', 'makan', 'nasi']
+const user = { id: 1, name: 'Budi', email: 'b@mail.com'}
+let angka = [1,8,6,9,99]
+let contohText = ' saya suka      JavaScript      '
+
+console.log(buah.indexOf('apel'))
+console.log(buah.lastIndexOf('apel'))
+console.log(absensi.every(kehadiran => kehadiran === 'hadir'))
+console.log(absensi.some(kehadiran => kehadiran === 'hadir'))
+console.log(hasilVirus.includes('virus'))
+console.log(kumpulanHarga.sort((a,b) => a - b))
+console.log(penggunaLama)
+console.log(stok.some(persediaan => persediaan > 0))
+console.log(kata2.join())
+console.log(Object.keys(user))
+console.log(Math.max(...angka))
+console.log(contohText.trim())
+
+
+
+
+
+
+
+
+
+
